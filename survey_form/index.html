@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <<h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+        <p id="description" class="description text-center">
+            Thank you for taking the time to help us improve the platform
+        </p>
+        <form id="survey-form">
+            <label id="name-label" for="name">Name 
+                <input id="name" type="text" class="form-control" placeholder="Enter your name" required/>
+            </label>
+            
+            <label id="email-label" for="email">Email
+                <input id="email" type="email" placeholder="Enter your email" class="form-control" required/>
+            </label>
+            
+            <label id="number-label" for="number">Number
+                <input id="number" type="number" min="10" max="99" placeholder="Enter a number between 10 and 99" class="form-control"/>
+            </label>
+            
+            <label id="dropdown-label" for="dropdown">What is your favorite food?
+                <select id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select one</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="hamburguer">Hamburguer</option>
+                </select>
+            </label>
+            <p>What movies genre you like the most?</p>
+            <label id="terror-label" for="terror">
+                <input type="radio" class="inline" name="movies_genre" value="terror" checked/>
+                Terror
+            </label>
+            <label id="comedy-label" for="comedy">
+                <input type="radio" class="inline" name="movies_genre" value="comedy">
+                Comedy
+            </label>
+            <label id="romance-label" for="romance">
+                <input type="radio" class="inline" name="movies_genre" value="romance">
+                Romance
+            </label>
+            <p>What other things do you like?</p>
+            <label id="dogs-label" for="dogs">
+                <input type="checkbox" id="dogs" class="inline" name="dogs" value="dogs">
+                Dogs
+            </label>
+            <label id="cats-label" for="cats">
+                <input type="checkbox" id="cats" class="inline" name="cats" value="cats">
+                Cats
+            </label>
+            <label id="videogames-label" for="videogames">
+                <input type="checkbox" id="videogames" class="inline" name="videogames" value="videogames">
+                Videogames
+            </label>
+            <label id="comments-label" for="comments">Additional info about you:
+                <textarea id="comments" class="input-textarea" placeholder="Enter your info here"></textarea>
+            </label>
+            <input id="submit" type="submit"/>
+        </form>
+    </body>
+</html>
